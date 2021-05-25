@@ -1,0 +1,47 @@
+__m128i c1 = _mm_loadu_si128((__m128i*)&m1[0][0]);
+__m128i c2 = _mm_loadu_si128((__m128i*)&m1[1][0]);
+__m128i c3 = _mm_loadu_si128((__m128i*)&m1[2][0]);
+__m128i c4 = _mm_loadu_si128((__m128i*)&m1[3][0]);
+/*
+Assuming the following 4x4 matrix
+c1 =  1 2 3 4 
+c2 =  5 6 7 8 
+c3 =  9 10 11 12 
+c4 =  13 14 15 16
+*/
+print_vec128i(c1); 
+print_vec128i(c2);
+print_vec128i(c3);
+print_vec128i(c4);
+std::cout<<"------"<<std::endl;
+__m128i t0 = _mm_unpacklo_epi32(c1,c2);
+__m128i t1 = _mm_unpackhi_epi32(c1,c2);
+__m128i t2 = _mm_unpacklo_epi32(c3,c4);
+__m128i t3 = _mm_unpackhi_epi32(c3,c4);
+/*
+after the above intrisicts execution the values are
+t0 = 1 5 2 6 
+t1 = 3 7 4 8
+t2 = 9 13 10 14
+t3 = 11 15 12 16 
+*/
+print_vec128i(t0);
+print_vec128i(t1);
+print_vec128i(t2);
+print_vec128i(t3);
+std::cout<<"------"<<std::endl;
+__m128i r0 = _mm_unpacklo_epi64(t0,t2); 
+__m128i r1 = _mm_unpackhi_epi64(t0,t2);
+__m128i r2 = _mm_unpacklo_epi64(t1,t3);
+__m128i r3 = _mm_unpackhi_epi64(t1,t3);
+/*
+after the above intrisicts execution the values are
+t0= 1 5 9 13 
+t1= 2 6 10 14 
+t2= 3 7 11 15 
+t3= 4 8 12 16 
+*/
+print_vec128i(r0);
+print_vec128i(r1);
+print_vec128i(r2);
+print_vec128i(r3);
