@@ -8,7 +8,7 @@ The V0.1 includes the vectorization of the following algorithms:<br />
     src/Linear_Algebra: in this folder the vectorized versions and tests of matrix transposure, additiona and multiplication was indcluded.<br /><br />
     src/Prints: this folder includes the print functions of the project with aim to help me in the debuging proccess.<br /><br />
     src/include: this folder includes all header files.<br /><br />
-    src/Benchmarks: last but not least, this folder includes all benchmarks with aim to illustate the optimization of any algorithm.<br /><br />
+    src/Benchmarks: last but not least, this folder includes all benchmarks with aim to illustrate the optimization of any algorithm.<br /><br />
     Makefile: file which build the project.
     
 # Instalation
