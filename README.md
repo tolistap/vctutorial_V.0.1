@@ -17,6 +17,6 @@ With aim to run the project you have to install:<br />
 
 With aim to run plots of benchmarks:<br />
 2 - python language: sudo apt istall python3.8 (usualy python is preinstalled in ubuntu)<br />
-2.1 - matplotlib: pip3 install matplotlib.<br />
+2.1 - matplotlib: pip3 install matplotlib.<br /><br />
 (If you do not want to plot benchmarks just remove the -DWITHOUT_NUMPY -I/usr/include/python3.8 from CXXFLAGS and -lpython3.8 from LBFLAGS in makefile)
 
