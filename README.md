@@ -26,12 +26,16 @@ With aim to run plots of benchmarks:<br />
 2 - python language:<br /> 
 
 ```diff
-$ sudo apt install python3.8 (for Debian-based distributions, usualy python is preinstalled in ubuntu check it with #witch python command) 
+$ sudo apt install python3.8 (for Debian-based distributions, usualy python is preinstalled in ubuntu check it with $witch python command) 
 ```
 or<br />
 ```diff
-$ sudo yum python38 (for Red Hat-based distributions usualy python is preinstalled check it with witch python command) 
+$ sudo yum python38 (for Red Hat-based distributions usualy python is preinstalled check it with $witch python command) 
 ```  
-2.1 - matplotlib: pip3 install matplotlib.<br /><br />
+2.1 - matplotlib: <br />
+```diff
+pip3 install matplotlib 
+```
+<br />
 (If you do not want to plot benchmarks just remove the -DWITHOUT_NUMPY -I/usr/include/python3.8 from CXXFLAGS and -lpython3.8 from LBFLAGS in makefile)
 
