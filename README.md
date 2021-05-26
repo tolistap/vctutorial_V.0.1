@@ -17,10 +17,20 @@ With aim to run the project you have to install:<br />
 ```diff
 $ sudo apt install build-essential(for Debian-based distributions)
 ```
-or $ sudo yum install gcc gcc-c++ kernel-devel make(for Red Hat-based distributions) <br /><br />
+or </br>
+```diff
+$ sudo yum install gcc gcc-c++ kernel-devel make(for Red Hat-based distributions) 
+```
+<br />
 With aim to run plots of benchmarks:<br />
-2 - python language: $ sudo apt install python3.8 (for Debian-based distributions, usualy python is preinstalled in ubuntu check it with <font color="green"> witch python </font> command)<br />
-    or $ sudo yum python38 (for Red Hat-based distributions usualy python is preinstalled check it with <font color="green"> witch python </font> command)<br />  
+2 - python language: 
+```diff
+$ sudo apt install python3.8 (for Debian-based distributions, usualy python is preinstalled in ubuntu check it with -witch python command) 
+```
+or
+```diff
+$ $ sudo yum python38 (for Red Hat-based distributions usualy python is preinstalled check it with -witch python command) 
+```  
 2.1 - matplotlib: pip3 install matplotlib.<br /><br />
 (If you do not want to plot benchmarks just remove the -DWITHOUT_NUMPY -I/usr/include/python3.8 from CXXFLAGS and -lpython3.8 from LBFLAGS in makefile)
 
