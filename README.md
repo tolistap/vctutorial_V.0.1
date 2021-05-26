@@ -21,3 +21,9 @@ With aim to run plots of benchmarks:<br />
 2.1 - matplotlib: pip3 install matplotlib.<br /><br />
 (If you do not want to plot benchmarks just remove the -DWITHOUT_NUMPY -I/usr/include/python3.8 from CXXFLAGS and -lpython3.8 from LBFLAGS in makefile)
 
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+```
