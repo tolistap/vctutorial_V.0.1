@@ -25,10 +25,6 @@ $ sudo yum install gcc gcc-c++ kernel-devel make(for Red Hat-based distributions
 With aim to run plots of benchmarks:<br />
 2 - python language:<br /> 
 ```diff
-$ sudo apt install build-essential(for Debian-based distributions)
-```
-
-```diff
 $ sudo apt install python3.8 (for Debian-based distributions, usualy python is preinstalled in ubuntu check it with witch python command) 
 ```
 or<br />
