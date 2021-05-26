@@ -15,7 +15,7 @@ The V0.1 includes the vectorization of the following algorithms:<br />
 With aim to run the project you have to install:<br />
 1 - c++ compiler: <br /> 
 ```diff
-+ $ sudo apt install build-essential(for Debian-based distributions)
+$ sudo apt install build-essential(for Debian-based distributions)
 ```
 or $ sudo yum install gcc gcc-c++ kernel-devel make(for Red Hat-based distributions) <br /><br />
 With aim to run plots of benchmarks:<br />
