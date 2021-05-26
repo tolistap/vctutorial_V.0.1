@@ -24,8 +24,9 @@ $ sudo yum install gcc gcc-c++ kernel-devel make(for Red Hat-based distributions
 <br />
 With aim to run plots of benchmarks:<br />
 2 - python language:<br /> 
+
 ```diff
-$ sudo apt install python3.8 (for Debian-based distributions, usualy python is preinstalled in ubuntu check it with witch python command) 
+$ sudo apt install python3.8 (for Debian-based distributions, usualy python is preinstalled in ubuntu check it with #witch python command) 
 ```
 or<br />
 ```diff
@@ -34,9 +35,3 @@ $ sudo yum python38 (for Red Hat-based distributions usualy python is preinstall
 2.1 - matplotlib: pip3 install matplotlib.<br /><br />
 (If you do not want to plot benchmarks just remove the -DWITHOUT_NUMPY -I/usr/include/python3.8 from CXXFLAGS and -lpython3.8 from LBFLAGS in makefile)
 
-```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-```
