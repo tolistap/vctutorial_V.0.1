@@ -13,10 +13,11 @@ The V0.1 includes the vectorization of the following algorithms:<br />
     
 # Instalation
 With aim to run the project you have to install:<br />
-1 - c++ compiler: $ sudo apt install build-essential<br /><br />
-
+1 - c++ compiler: $ sudo apt install build-essential(for Debian-based distributions)<br />
+    or $ sudo yum install gcc gcc-c++ kernel-devel make(for Red Hat-based distributions) <br /><br />
 With aim to run plots of benchmarks:<br />
-2 - python language: sudo apt istall python3.8 (usualy python is preinstalled in ubuntu)<br />
+2 - python language: $ sudo apt istall python3.8 (for Debian-based distributions, usualy python is preinstalled in ubuntu check it with witch python command)<br />
+    or $ sudo yum python38 (for Red Hat-based distributions usualy python is preinstalled check it with witch python command)<br />  
 2.1 - matplotlib: pip3 install matplotlib.<br /><br />
 (If you do not want to plot benchmarks just remove the -DWITHOUT_NUMPY -I/usr/include/python3.8 from CXXFLAGS and -lpython3.8 from LBFLAGS in makefile)
 
