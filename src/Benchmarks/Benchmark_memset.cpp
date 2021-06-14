@@ -6,7 +6,7 @@
 /*In the code bellow benchmarks for scalar and vectorized functions which implement the procedure of memory set are made.*/
 
 void Benchmark_memset() {
-    std::cout<<std::endl << "memset Function Vectorization: "<<std::endl;
+    std::cout <<"\x1B[35m memset Function Vectorization: \x1B[0m"<<std::endl;
     
     /*alocate memory for benchmars*/
     int size = 1000000;

@@ -6,7 +6,7 @@
 /*In the code bellow benchmarks for scalar and vectorized functions which implement the procedure of memory search are made.*/
 
 void Benchmark_memchr(){
-    std::cout<<std::endl << "memchr Function Vectorization: "<<std::endl;
+    std::cout <<"\x1B[35m memchr Function Vectorization: \x1B[0m"<<std::endl;
 
     /* initialize random seed: */
     srand (time(NULL));
