@@ -1,19 +1,12 @@
 #include<iostream>
 #include<vector>
 #include<immintrin.h>
-#include"PrintFNS.h"
 
 /*In this code file a function for matrix additions vectorized with 2 methods.
   128 version with a 128bits vectors and 256 version with 256bits vectors
 */
 
 
-/*This method adds two matrixes based in cpp vectors objects*/
-void scalar_add_matcpp(std::vector<std::vector<float>> &m3 ,std::vector<std::vector<float>> &m1, std::vector<std::vector<float>> &m2, const int n, const int m){
-    for(int i = 0; i < n; i++){
-        for(int j = 0; j < m; j++){m3[i][j]=m1[i][j]+m2[i][j];} 
-    }
-}
 /*The method to add two matrixes is simple, according to linear algebra first must have the same dimensions
   Asuming the matrixes A and B:
 
@@ -62,7 +55,3 @@ void vectorized256_add_matcpp(std::vector<std::vector<float>> &m3, std::vector<s
         } 
     }
 }
-
-
-
-

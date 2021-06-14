@@ -2,8 +2,7 @@
 #include<time.h>
 #include<stdlib.h>
 #include<vector>
-#include"LinearAlgebraFNS.h"
-#include"PrintFNS.h"
+#include"LinearAlgebraFNS.hpp"
 #include"gtest/gtest.h"
 
 TEST(scalar_mul_matint,test4x4_multiplication){
@@ -11,7 +10,7 @@ TEST(scalar_mul_matint,test4x4_multiplication){
     std::vector<std::vector<int>> M2 {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}, {13, 14, 15, 16}};
     std::vector<std::vector<int>> M3 {{0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}};
     std::vector<std::vector<int>> M4 {{0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}};
-    scalar_mul_matint(M3,M1,M2,4,4,4);
+    scalar_mul_matrixes(M3,M1,M2);
     vectorized128_mul_matcpp(M4,M1,M2,4,4,4);
     for (int i = 0;i < 4; i++){
         for (int j = 0; j<4; j++) {ASSERT_EQ(M3[i][j],M4[i][j]);}
@@ -23,7 +22,7 @@ TEST(scalar_mul_matcpp,test8x4_multiplication){
     std::vector<std::vector<int>> M2 {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}, {13, 14, 15, 16}};
     std::vector<std::vector<int>> M3 {{0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}};
     std::vector<std::vector<int>> M4 {{0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}};
-    scalar_mul_matint(M3,M1,M2,8,4,4);
+    scalar_mul_matrixes(M3,M1,M2);
     vectorized128_mul_matcpp(M4,M1,M2,8,4,4);
     for (int i = 0;i < 8; i++){
         for (int j = 0; j<4; j++) {ASSERT_EQ(M3[i][j],M4[i][j]);}
@@ -40,7 +39,7 @@ TEST(scalar_mul_matcpp,test16x4_multiplication){
     for(int i=0; i<rows; i++){
         for (int j=0; j<4; j++){M1[i][j]=rand() % 1000 + 1 ;}
     }
-    scalar_mul_matint(M3,M1,M2,rows,4,4);
+    scalar_mul_matrixes(M3,M1,M2);
     vectorized128_mul_matcpp(M4,M1,M2,rows,4,4);
     for (int i = 0;i < rows; i++){
         for (int j = 0; j<4; j++) {ASSERT_EQ(M3[i][j],M4[i][j]);}
@@ -57,7 +56,7 @@ TEST(scalar_mul_matcpp,test32x4_multiplication){
     for(int i=0; i<rows; i++){
         for (int j=0; j<4; j++){M1[i][j]=rand() % 1000 + 1 ;}
     }
-    scalar_mul_matint(M3,M1,M2,rows,4,4);
+    scalar_mul_matrixes(M3,M1,M2);
     vectorized128_mul_matcpp(M4,M1,M2,rows,4,4);
     for (int i = 0;i < rows; i++){
         for (int j = 0; j<4; j++) {ASSERT_EQ(M3[i][j],M4[i][j]);}
@@ -74,7 +73,7 @@ TEST(scalar_mul_matcpp,test64x4_multiplication){
     for(int i=0; i<rows; i++){
         for (int j=0; j<4; j++){M1[i][j]=rand() % 1000 + 1 ;}
     }
-    scalar_mul_matint(M3,M1,M2,rows,4,4);
+    scalar_mul_matrixes(M3,M1,M2);
     vectorized128_mul_matcpp(M4,M1,M2,rows,4,4);
     for (int i = 0;i < rows; i++){
         for (int j = 0; j<4; j++) {ASSERT_EQ(M3[i][j],M4[i][j]);}
@@ -91,7 +90,7 @@ TEST(scalar_mul_matcpp,test128x4_multiplication){
     for(int i=0; i<rows; i++){
         for (int j=0; j<4; j++){M1[i][j]=rand() % 1000 + 1 ;}
     }
-    scalar_mul_matint(M3,M1,M2,rows,4,4);
+    scalar_mul_matrixes(M3,M1,M2);
     vectorized128_mul_matcpp(M4,M1,M2,rows,4,4);
     for (int i = 0;i < rows; i++){
         for (int j = 0; j<4; j++) {ASSERT_EQ(M3[i][j],M4[i][j]);}
@@ -108,7 +107,7 @@ TEST(scalar_mul_matcpp,test256x4_multiplication){
     for(int i=0; i<rows; i++){
         for (int j=0; j<4; j++){M1[i][j]=rand() % 1000 + 1 ;}
     }
-    scalar_mul_matint(M3,M1,M2,rows,4,4);
+    scalar_mul_matrixes(M3,M1,M2);
     vectorized128_mul_matcpp(M4,M1,M2,rows,4,4);
     for (int i = 0;i < rows; i++){
         for (int j = 0; j<4; j++) {ASSERT_EQ(M3[i][j],M4[i][j]);}
@@ -125,7 +124,7 @@ TEST(scalar_mul_matcpp,test512x4_multiplication){
     for(int i=0; i<rows; i++){
         for (int j=0; j<4; j++){M1[i][j]=rand() % 1000 + 1 ;}
     }
-    scalar_mul_matint(M3,M1,M2,rows,4,4);
+    scalar_mul_matrixes(M3,M1,M2);
     vectorized128_mul_matcpp(M4,M1,M2,rows,4,4);
     for (int i = 0;i < rows; i++){
         for (int j = 0; j<4; j++) {ASSERT_EQ(M3[i][j],M4[i][j]);}
@@ -142,7 +141,7 @@ TEST(scalar_mul_matcpp,test1000x4_multiplication){
     for(int i=0; i<rows; i++){
         for (int j=0; j<4; j++){M1[i][j]=rand() % 1000 + 1 ;}
     }
-    scalar_mul_matint(M3,M1,M2,rows,4,4);
+    scalar_mul_matrixes(M3,M1,M2);
     vectorized128_mul_matcpp(M4,M1,M2,rows,4,4);
     for (int i = 0;i < rows; i++){
         for (int j = 0; j<4; j++) {ASSERT_EQ(M3[i][j],M4[i][j]);}
@@ -159,7 +158,7 @@ TEST(scalar_mul_matcpp,test1024x4_multiplication){
     for(int i=0; i<rows; i++){
         for (int j=0; j<4; j++){M1[i][j]=rand() % 1000 + 1 ;}
     }
-    scalar_mul_matint(M3,M1,M2,rows,4,4);
+    scalar_mul_matrixes(M3,M1,M2);
     vectorized128_mul_matcpp(M4,M1,M2,rows,4,4);
     for (int i = 0;i < rows; i++){
         for (int j = 0; j<4; j++) {ASSERT_EQ(M3[i][j],M4[i][j]);}
@@ -176,7 +175,7 @@ TEST(scalar_mul_matcpp,test2000x4_multiplication){
     for(int i=0; i<rows; i++){
         for (int j=0; j<4; j++){M1[i][j]=rand() % 1000 + 1 ;}
     }
-    scalar_mul_matint(M3,M1,M2,rows,4,4);
+    scalar_mul_matrixes(M3,M1,M2);
     vectorized128_mul_matcpp(M4,M1,M2,rows,4,4);
     for (int i = 0;i < rows; i++){
         for (int j = 0; j<4; j++) {ASSERT_EQ(M3[i][j],M4[i][j]);}
@@ -193,7 +192,7 @@ TEST(scalar_mul_matcpp,test2048x4_multiplication){
     for(int i=0; i<rows; i++){
         for (int j=0; j<4; j++){M1[i][j]=rand() % 1000 + 1 ;}
     }
-    scalar_mul_matint(M3,M1,M2,rows,4,4);
+    scalar_mul_matrixes(M3,M1,M2);
     vectorized128_mul_matcpp(M4,M1,M2,rows,4,4);
     for (int i = 0;i < rows; i++){
         for (int j = 0; j<4; j++) {ASSERT_EQ(M3[i][j],M4[i][j]);}
@@ -204,21 +203,4 @@ int main(){
     std::cout<<"Call matmul"<<std::endl;
     testing::InitGoogleTest();
     return RUN_ALL_TESTS();
-
-    /*C++ way of handling matrixes*/
-    /*
-    std::vector<std::vector<float>> A {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}};
-    std::vector<std::vector<float>> B {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}, {13, 14, 15, 16}};
-    std::vector<std::vector<float>> C {{0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}};
-    scalar_mul_matfl(C,A,B,3,4,4);
-    print_matrix(C);
-    std::cout<<"-----------"<<std::endl;
-    std::vector<std::vector<int>> M1 {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}};
-    std::vector<std::vector<int>> M2 {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}, {13, 14, 15, 16}};
-    std::vector<std::vector<int>> M3 {{0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}};
-    vectorized128_mul_matcpp(M3,M1,M2,3,4,4);
-    print_matrixint(M3);
-    return 0 ;
-    */
-
 }

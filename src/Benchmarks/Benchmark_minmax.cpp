@@ -1,14 +1,14 @@
 #include<iostream>
 #include<chrono>
-#include <time.h>   
-#include <cstring>
-#include "MathsFNS.h"
+#include<time.h>   
+#include<cstring>
+#include"MathsFNS.hpp"
 
 
 /*In the code bellow benchmarks for scalar and vectorized functions which implement the procedure of min max calculation are made.*/
 
 void Benchmark_minmax(const int n){
-    std::cout << "Min Max Vectorization: "<<std::endl;
+    std::cout <<"\x1B[35m MinMax Vectorization: \x1B[0m"<<std::endl;
     /* initialize random seed: */
     srand (time(NULL));
 
@@ -18,7 +18,7 @@ void Benchmark_minmax(const int n){
     
     /*Scalar max Benchmark*/
     auto start = std::chrono::steady_clock::now();
-    scalar_max(vec,n);
+    scalar_max<float>(vec,n);
     auto end = std::chrono::steady_clock::now();
     std::chrono::duration<double> elapsed_seconds = end-start;
     std::cout << "Scalar max Function elapsed time: " << elapsed_seconds.count() << "s\n";
@@ -39,7 +39,7 @@ void Benchmark_minmax(const int n){
 
     /*Classic min Benchmark*/
     start = std::chrono::steady_clock::now();
-    scalar_min(vec,n);
+    scalar_min<float>(vec,n);
     end = std::chrono::steady_clock::now();
     elapsed_seconds = end-start;
     std::cout << "Scalar min Function elapsed time: " << elapsed_seconds.count() << "s\n";
@@ -56,10 +56,8 @@ void Benchmark_minmax(const int n){
     min_vectorized256(vec,n);
     end = std::chrono::steady_clock::now();
     elapsed_seconds = end-start;
-    std::cout << "Vectorized256 min Function elapsed time: " << elapsed_seconds.count() << "s\n";
-         
+    std::cout << "Vectorized256 min Function elapsed time: " << elapsed_seconds.count() << "s\n";         
 }
-
 
 
 

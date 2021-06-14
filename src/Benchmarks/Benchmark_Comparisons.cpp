@@ -1,12 +1,12 @@
 #include<iostream>
 #include<chrono>
-#include <time.h>
-#include "MathsFNS.h"
+#include<time.h>
+#include"MathsFNS.hpp"
 
 /*In the code bellow benchmarks for scalar and vectorized functions which implement the procedure of comparison are made.*/
 
 void Benchmark_Comparisons(const int n){
-    std::cout<<std::endl << "Comparisons Vectorization: "<<std::endl;
+    std::cout <<"\x1B[35m Comparisons Vectorization: \x1B[0m"<<std::endl;
     
     /* initialize random seed: */
     srand (time(NULL));

@@ -1,9 +1,8 @@
 #include<iostream>
 #include<vector>
 #include<immintrin.h>
-#include"PrintFNS.h"
-#include"LinearAlgebraFNS.h"
-#include"MathsFNS.h"
+#include"LinearAlgebraFNS.hpp"
+#include"MathsFNS.hpp"
 
 
 /* Union typedefs was declared with aim to trick the compiler to see 
@@ -19,27 +18,6 @@ typedef union uni128i{__m128i f; int32_t vec[4];} u128i;
   128 version with a 128bits vectors and 256 version with 256bits vectors
 */
 
-/*This method multiplies two matrixes based in cpp vectors objects for integer type matrixes*/
-void scalar_mul_matint(std::vector<std::vector<int>> &m3, std::vector<std::vector<int>> &m1, std::vector<std::vector<int>> &m2, const int n, const int k, const int m){
-    for(int i = 0; i < n; i++){
-        for(int j = 0; j < m; j++){
-            for (int l = 0; l<k; l++){
-                m3[i][j] += m1[i][l]*m2[l][j];
-                }
-        } 
-    }
-}
-
-/*This method multiplies two matrixes based in cpp vectors objects for float type matrixes*/
-void scalar_mul_matfl(std::vector<std::vector<float>> &m3, std::vector<std::vector<float>> &m1, std::vector<std::vector<float>> &m2, const int n, const int k, const int m){
-    for(int i = 0; i < n; i++){
-        for(int j = 0; j < m; j++){
-            for (int l = 0; l<k; l++){
-                m3[i][j] += m1[i][l]*m2[l][j];
-                }
-        } 
-    }
-}
 
 /*This function is the vectorized 128bits methods witch implements matrix addition for integer types matrixes*/
 void vectorized128_mul_matcpp(std::vector<std::vector<int>> &m3, std::vector<std::vector<int>> &m1, std::vector<std::vector<int>> &m2, const int n, const int k, const int m){
@@ -82,8 +60,3 @@ void vectorized128_mul_matcpp(std::vector<std::vector<int>> &m3, std::vector<std
         }
     } 
 }
-
-
-
-
-

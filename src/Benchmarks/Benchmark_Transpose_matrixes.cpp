@@ -1,7 +1,7 @@
 #include<iostream>
 #include<vector>
 #include<chrono>
-#include"LinearAlgebraFNS.h"
+#include"LinearAlgebraFNS.hpp"
 #include "matplotlibcpp.h"
 
 namespace plt = matplotlibcpp;
@@ -10,6 +10,7 @@ namespace plt = matplotlibcpp;
 /*In the code bellow benchmarks for scalar and vectorized functions which implement the procedure of matrix transposure are made.*/
 
 void Benchmark_Transpose_matrix4x4(){
+    std::cout <<"\x1B[35m Matrix Transposure Vectorization: \x1B[0m"<<std::endl;
     std::vector<double> x;
 
     //std::vector<std::vector<int>> vec1(4, std::vector<int> (4, 0));
@@ -23,7 +24,7 @@ void Benchmark_Transpose_matrix4x4(){
 
     /*Scala 4x4 matrix trasnposure Benchmark*/
     auto start = std::chrono::steady_clock::now();
-    for (int i=0; i<100000; i++){tr = scalar_transposeint(vec1);}
+    for (int i=0; i<100000; i++){tr = scalar_transpose(vec1);}
     auto end = std::chrono::steady_clock::now();
     std::chrono::duration<double> elapsed_seconds = end-start;
     std::cout << "Scalar Transposure matrixes4x4 Function elapsed time: " << elapsed_seconds.count() << "s\n";

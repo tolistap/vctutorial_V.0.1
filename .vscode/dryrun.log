@@ -1,0 +1,44 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/vcamp/Vectrocamp/vctutorial_V.0.1'
+mkdir -p obj/memman obj/Maths obj/Benchmarks obj/Prints obj/Linear_Algebra bin
+g++ -std=c++11 -Wall -I src/include -DWITHOUT_NUMPY -I/usr/include/python3.8 -mavx -mavx2 -O2 -g3  -c src/memman/test_memset.cpp -o obj/memman/test_memset.o
+g++ -std=c++11 -Wall -I src/include -DWITHOUT_NUMPY -I/usr/include/python3.8 -mavx -mavx2 -O2 -g3  -c src/memman/memset.cpp -o obj/memman/memset.o
+g++ obj/memman/test_memset.o obj/memman/memset.o -lgtest -lpthread -lpython3.8 -o bin/test_memset.exe
+g++ -std=c++11 -Wall -I src/include -DWITHOUT_NUMPY -I/usr/include/python3.8 -mavx -mavx2 -O2 -g3  -c src/memman/test_memchr.cpp -o obj/memman/test_memchr.o
+g++ -std=c++11 -Wall -I src/include -DWITHOUT_NUMPY -I/usr/include/python3.8 -mavx -mavx2 -O2 -g3  -c src/memman/memchr.cpp -o obj/memman/memchr.o
+g++ obj/memman/test_memchr.o obj/memman/memchr.o obj/memman/memset.o -lgtest -lpthread -lpython3.8 -o bin/test_memchr.exe
+g++ -std=c++11 -Wall -I src/include -DWITHOUT_NUMPY -I/usr/include/python3.8 -mavx -mavx2 -O2 -g3  -c src/memman/test_memcpy.cpp -o obj/memman/test_memcpy.o
+g++ -std=c++11 -Wall -I src/include -DWITHOUT_NUMPY -I/usr/include/python3.8 -mavx -mavx2 -O2 -g3  -c src/memman/memcpy.cpp -o obj/memman/memcpy.o
+g++  -std=c++11 -Wall -I src/include -DWITHOUT_NUMPY -I/usr/include/python3.8 -mavx -mavx2 -O2 -g3  -c src/Prints/PrintVecs.cpp -o obj/Prints/PrintVecs.o
+g++ obj/memman/test_memcpy.o obj/memman/memcpy.o obj/Prints/PrintVecs.o -lgtest -lpthread -lpython3.8 -o bin/test_memcpy.exe 
+g++  -std=c++11 -Wall -I src/include -DWITHOUT_NUMPY -I/usr/include/python3.8 -mavx -mavx2 -O2 -g3  -c src/Maths/test_Comparison_vectorized.cpp -o obj/Maths/test_Comparison_vectorized.o
+g++  -std=c++11 -Wall -I src/include -DWITHOUT_NUMPY -I/usr/include/python3.8 -mavx -mavx2 -O2 -g3  -c src/Maths/Comparison_vectorized.cpp -o obj/Maths/Comparison_vectorized.o
+g++ obj/Maths/test_Comparison_vectorized.o obj/Maths/Comparison_vectorized.o -lgtest -lpthread -lpython3.8 -o bin/test_Comparison_vectorized.exe
+g++  -std=c++11 -Wall -I src/include -DWITHOUT_NUMPY -I/usr/include/python3.8 -mavx -mavx2 -O2 -g3  -c src/Maths/test_Dot_product_vectorized.cpp -o obj/Maths/test_Dot_product_vectorized.o
+g++  -std=c++11 -Wall -I src/include -DWITHOUT_NUMPY -I/usr/include/python3.8 -mavx -mavx2 -O2 -g3  -c src/Maths/Dot_product_vectorized.cpp -o obj/Maths/Dot_product_vectorized.o
+g++ obj/Maths/test_Dot_product_vectorized.o obj/Maths/Dot_product_vectorized.o obj/Prints/PrintVecs.o -lgtest -lpthread -lpython3.8 -o bin/test_Dot_product_vectorized.exe
+g++  -std=c++11 -Wall -I src/include -DWITHOUT_NUMPY -I/usr/include/python3.8 -mavx -mavx2 -O2 -g3  -c src/Maths/test_min_max_vectorized.cpp -o obj/Maths/test_min_max_vectorized.o
+g++  -std=c++11 -Wall -I src/include -DWITHOUT_NUMPY -I/usr/include/python3.8 -mavx -mavx2 -O2 -g3  -c src/Maths/min_max_vectorized.cpp -o obj/Maths/min_max_vectorized.o
+g++ obj/Maths/test_min_max_vectorized.o obj/Maths/min_max_vectorized.o  obj/Prints/PrintVecs.o -lgtest -lpthread -lpython3.8 -o bin/test_min_max_vectorized.exe
+g++  -std=c++11 -Wall -I src/include -DWITHOUT_NUMPY -I/usr/include/python3.8 -mavx -mavx2 -O2 -g3  -c src/Linear_Algebra/test_Add_matrixes.cpp -o obj/Linear_Algebra/test_Add_matrixes.o
+g++  -std=c++11 -Wall -I src/include -DWITHOUT_NUMPY -I/usr/include/python3.8 -mavx -mavx2 -O2 -g3  -c src/Linear_Algebra/Add_matrixes_vectorized.cpp -o obj/Linear_Algebra/Add_matrixes_vectorized.o
+g++ obj/Linear_Algebra/test_Add_matrixes.o obj/Linear_Algebra/Add_matrixes_vectorized.o obj/Prints/PrintVecs.o -lgtest -lpthread -lpython3.8 -o bin/test_Add_matrixes.exe 
+g++  -std=c++11 -Wall -I src/include -DWITHOUT_NUMPY -I/usr/include/python3.8 -mavx -mavx2 -O2 -g3  -c src/Linear_Algebra/test_Transpose_matrixes.cpp -o obj/Linear_Algebra/test_Transpose_matrixes.o
+g++  -std=c++11 -Wall -I src/include -DWITHOUT_NUMPY -I/usr/include/python3.8 -mavx -mavx2 -O2 -g3  -c src/Linear_Algebra/Transpose_matrixes_vectorized.cpp -o obj/Linear_Algebra/Transpose_matrixes_vectorized.o
+g++ obj/Linear_Algebra/test_Transpose_matrixes.o obj/Linear_Algebra/Transpose_matrixes_vectorized.o obj/Prints/PrintVecs.o -lgtest -lpthread -lpython3.8 -o bin/test_Transpose_matrixes.exe 
+g++  -std=c++11 -Wall -I src/include -DWITHOUT_NUMPY -I/usr/include/python3.8 -mavx -mavx2 -O2 -g3  -c src/Linear_Algebra/test_Mul_matrixes.cpp -o obj/Linear_Algebra/test_Mul_matrixes.o
+g++  -std=c++11 -Wall -I src/include -DWITHOUT_NUMPY -I/usr/include/python3.8 -mavx -mavx2 -O2 -g3  -c src/Linear_Algebra/Mul_matrixes_vectorized.cpp -o obj/Linear_Algebra/Mul_matrixes_vectorized.o
+g++   obj/Linear_Algebra/test_Mul_matrixes.o  obj/Linear_Algebra/Mul_matrixes_vectorized.o  obj/Linear_Algebra/Transpose_matrixes_vectorized.o obj/Prints/PrintVecs.o -lgtest -lpthread -lpython3.8 -o bin/test_Mul_matrixes.exe 
+g++ -std=c++11 -Wall -I src/include -DWITHOUT_NUMPY -I/usr/include/python3.8 -mavx -mavx2 -O2 -g3  -c src/Benchmarks/Benchmarks.cpp -o obj/Benchmarks/Benchmarks.o
+g++ -std=c++11 -Wall -I src/include -DWITHOUT_NUMPY -I/usr/include/python3.8 -mavx -mavx2 -O2 -g3  -c src/Benchmarks/Benchmark_memchr.cpp -o obj/Benchmarks/Benchmark_memchr.o
+g++ -std=c++11 -Wall -I src/include -DWITHOUT_NUMPY -I/usr/include/python3.8 -mavx -mavx2 -O2 -g3  -c src/Benchmarks/Benchmark_memset.cpp -o obj/Benchmarks/Benchmark_memset.o
+g++ -std=c++11 -Wall -I src/include -DWITHOUT_NUMPY -I/usr/include/python3.8 -mavx -mavx2 -O2 -g3  -c src/Benchmarks/Benchmark_memcpy.cpp -o obj/Benchmarks/Benchmark_memcpy.o
+g++ -std=c++11 -Wall -I src/include -DWITHOUT_NUMPY -I/usr/include/python3.8 -mavx -mavx2 -O2 -g3  -c src/Benchmarks/Benchmark_Comparisons.cpp -o obj/Benchmarks/Benchmark_Comparisons.o
+g++ -std=c++11 -Wall -I src/include -DWITHOUT_NUMPY -I/usr/include/python3.8 -mavx -mavx2 -O2 -g3  -c src/Benchmarks/Benchmark_Dotproduct.cpp -o obj/Benchmarks/Benchmark_Dotproduct.o
+g++ -std=c++11 -Wall -I src/include -DWITHOUT_NUMPY -I/usr/include/python3.8 -mavx -mavx2 -O2 -g3  -c src/Benchmarks/Benchmark_minmax.cpp -o obj/Benchmarks/Benchmark_minmax.o
+g++ -std=c++11 -Wall -I src/include -DWITHOUT_NUMPY -I/usr/include/python3.8 -mavx -mavx2 -O2 -g3  -c src/Benchmarks/Benchmark_Add_matrixes.cpp -o obj/Benchmarks/Benchmark_Add_matrixes.o
+g++ -std=c++11 -Wall -I src/include -DWITHOUT_NUMPY -I/usr/include/python3.8 -mavx -mavx2 -O2 -g3  -c src/Benchmarks/Benchmark_Transpose_matrixes.cpp -o obj/Benchmarks/Benchmark_Transpose_matrixes.o
+g++ -std=c++11 -Wall -I src/include -DWITHOUT_NUMPY -I/usr/include/python3.8 -mavx -mavx2 -O2 -g3  -c src/Benchmarks/Benchmark_Mul_matrixes.cpp -o obj/Benchmarks/Benchmark_Mul_matrixes.o
+g++ obj/Benchmarks/Benchmarks.o obj/Benchmarks/Benchmark_memchr.o obj/Benchmarks/Benchmark_memset.o obj/Benchmarks/Benchmark_memcpy.o obj/memman/memset.o obj/memman/memchr.o obj/memman/memcpy.o obj/Maths/Comparison_vectorized.o obj/Benchmarks/Benchmark_Comparisons.o obj/Maths/Dot_product_vectorized.o obj/Benchmarks/Benchmark_Dotproduct.o  obj/Benchmarks/Benchmark_minmax.o obj/Maths/min_max_vectorized.o obj/Benchmarks/Benchmark_Add_matrixes.o obj/Linear_Algebra/Add_matrixes_vectorized.o obj/Benchmarks/Benchmark_Transpose_matrixes.o obj/Linear_Algebra/Transpose_matrixes_vectorized.o  obj/Benchmarks/Benchmark_Mul_matrixes.o obj/Linear_Algebra/Mul_matrixes_vectorized.o   obj/Prints/PrintVecs.o -lgtest -lpthread -lpython3.8 -o bin/Benchmarks.exe
+make: Leaving directory '/home/vcamp/Vectrocamp/vctutorial_V.0.1'
+ 

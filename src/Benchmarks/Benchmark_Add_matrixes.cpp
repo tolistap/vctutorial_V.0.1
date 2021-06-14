@@ -1,13 +1,14 @@
 #include<vector>
 #include<iostream>
 #include<chrono>
-#include"LinearAlgebraFNS.h"
+#include"LinearAlgebraFNS.hpp"
 
 
 /*In the code bellow benchmarks for scalar and vectorized functions which implement the procedure of matrix addition are made.*/
 
 void Benchmark_add_matrixes(const int row, const int col){
-    std::cout << "Add Matrixes Vectorization: "<<std::endl;
+    std::cout <<"\x1B[35m Matrix Addition Vectorization: \x1B[0m"<<std::endl;
+    
     /* Declaring 3 2D vectors containing "n" elements each having the value "vector<float> (col, <fnumber>)".
     "vector<float> (col, <fnumber>)" means a vector having "m" elements each of value of any float number.
     Here these elements are vectors.
@@ -19,7 +20,7 @@ void Benchmark_add_matrixes(const int row, const int col){
 
     /*Benchmark Scalar Method*/
     auto start = std::chrono::steady_clock::now();
-    scalar_add_matcpp(vec3,vec2,vec1,row,col);
+    scalar_add_matrixes(vec3,vec2,vec1);
     auto end = std::chrono::steady_clock::now();
     std::chrono::duration<double> elapsed_seconds = end-start;
     std::cout << "Scalar add matrixes Function elapsed time: " << elapsed_seconds.count() << "s\n";
