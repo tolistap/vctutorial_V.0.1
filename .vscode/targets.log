@@ -1,0 +1,675 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.2.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Mon Jun 14 10:29:01 2021
+
+# Variables
+
+# 'override' directive
+GNUMAKEFLAGS := 
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+DESKTOP_SESSION = ubuntu
+# default
+.SHELLFLAGS := -c
+# environment
+XDG_SESSION_CLASS = user
+# environment
+SNAP_COMMON = /var/snap/code/common
+# environment
+XDG_SESSION_TYPE = x11
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+IM_CONFIG_PHASE = 1
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+XAUTHORITY = /run/user/1000/gdm/Xauthority
+# environment
+GDMSESSION = ubuntu
+# environment
+XMODIFIERS = @im=ibus
+# makefile
+CURDIR := /home/vcamp/Vectrocamp/vctutorial_V.0.1
+# makefile
+SHELL = /bin/sh
+# environment
+SNAP_DATA = /var/snap/code/66
+# makefile (from 'Makefile', line 14)
+MATH2EXE = bin/test_Dot_product_vectorized.exe
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+JOURNAL_STREAM = 8:39383
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
+# environment
+SNAP_INSTANCE_NAME = code
+# environment
+SNAP_ARCH = amd64
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# automatic
+@F = $(notdir $@)
+# environment
+GIO_LAUNCHED_DESKTOP_FILE = /var/lib/snapd/desktop/applications/code_code.desktop
+# environment
+USERNAME = vcamp
+# makefile (from 'Makefile', line 9)
+MEM1EXE = bin/test_memset.exe
+# makefile (from 'Makefile', line 4)
+CXXFLAGS = -std=c++11 -Wall -I src/include -DWITHOUT_NUMPY -I/usr/include/python3.8 -mavx -mavx2 -O2 -g3 
+# environment
+MAKELEVEL := 0
+# environment
+XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+_ = /snap/code/66/usr/share/code/code
+# environment
+MANAGERPID = 821
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# environment
+LC_NAME = el_GR.UTF-8
+# environment
+VSCODE_CWD = /home/vcamp
+# environment
+GSETTINGS_SCHEMA_DIR = /snap/code/66/usr/share/glib-2.0/schemas
+# makefile (from 'Makefile', line 7)
+BENCHMARKEXE = bin/Benchmarks.exe
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+PATH = /home/vcamp/.local/bin:/home/vcamp/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+# environment
+GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
+# environment
+SESSION_MANAGER = local/Vectorcamp:@/tmp/.ICE-unix/1126,unix/Vectorcamp:/tmp/.ICE-unix/1126
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+GDK_PIXBUF_MODULE_FILE = /home/vcamp/snap/code/common/.cache/gdk-pixbuf-loaders.cache
+# environment
+SNAP = /snap/code/66
+# environment
+SNAP_VERSION = b4c1bd0a
+# environment
+XDG_MENU_PREFIX = gnome-
+# makefile (from 'Makefile', line 10)
+MEM2EXE = bin/test_memchr.exe
+# environment
+VSCODE_LOG_STACK = false
+# environment
+DISABLE_WAYLAND = 1
+# environment
+VSCODE_CRASH_REPORTER_START_OPTIONS = {"companyName":"Microsoft","productName":"VSCode","submitURL":"appcenter://code?aid=fba07a4d-84bd-4fc8-a125-9640fc8ce171&uid=f5e185f0-4d03-446f-80d1-7b0bfc992946&iid=f5e185f0-4d03-446f-80d1-7b0bfc992946&sid=f5e185f0-4d03-446f-80d1-7b0bfc992946","uploadToServer":true}
+# environment
+INVOCATION_ID = 27c7c09507f347839700800063b26b2c
+# makefile (from 'Makefile', line 5)
+LDFLAGS = -lgtest -lpthread -lpython3.8
+# environment
+GDK_PIXBUF_MODULEDIR = /snap/code/66/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# environment
+LS_COLORS = 
+# environment
+XDG_SESSION_DESKTOP = ubuntu
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 4389
+# automatic
+%F = $(notdir $%)
+# environment
+DISPLAY = :0
+# makefile (from 'Makefile', line 15)
+MATH3EXE = bin/test_min_max_vectorized.exe
+# makefile (from 'Makefile', line 18)
+LAMATH2 = bin/test_Transpose_matrixes.exe
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+SNAP_INSTANCE_KEY = 
+# environment
+PWD = /home/vcamp/Vectrocamp/vctutorial_V.0.1
+# default
+.LOADED := 
+# environment
+SSH_AGENT_PID = 1082
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
+# environment
+GTK_MODULES = gail:atk-bridge
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProcess
+# environment
+HOME = /home/vcamp
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# environment
+VSCODE_CLI = 1
+# environment
+LOGNAME = vcamp
+# makefile (from 'Makefile', line 17)
+LAMATH1 = bin/test_Add_matrixes.exe
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
+# environment
+SNAP_CONTEXT = 6C3add8V5lqdKfJgjvJpOLCDM7rHkWHMVpoBEz18ZWbQeY_UOwf0
+# automatic
++F = $(notdir $+)
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+SNAP_USER_COMMON = /home/vcamp/snap/code/common
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+LC_TIME = el_GR.UTF-8
+# environment
+SNAP_REAL_HOME = /home/vcamp
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+QT_IM_MODULE = ibus
+# environment
+SNAP_USER_DATA = /home/vcamp/snap/code/66
+# environment
+SHLVL = 0
+# makefile (from 'Makefile', line 3)
+CC = g++
+# environment
+GNOME_SHELL_SESSION_MODE = ubuntu
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-1b339ecc-f332-42f8-b548-4ed177c870d3.sock
+# default
+MAKE_VERSION := 4.2.1
+# environment
+USER = vcamp
+# environment
+SNAP_REVISION = 66
+# environment
+LC_MONETARY = el_GR.UTF-8
+# makefile
+.DEFAULT_GOAL := all
+# environment
+XDG_CURRENT_DESKTOP = Unity
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+LC_TELEPHONE = el_GR.UTF-8
+# makefile (from 'Makefile', line 11)
+MEM3EXE = bin/test_memcpy.exe
+# default
+MAKE_COMMAND := make
+# environment
+VSCODE_NODE_CACHED_DATA_DIR = /home/vcamp/.config/Code/CachedData/b4c1bd0a9b03c749ea011b06c6d2676c8091a70c
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-69967058-1.57.0-main.sock
+# environment
+BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
+# makefile
+MAKEFLAGS = pqrR
+# environment
+MFLAGS = -pqrR
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+BREAKPAD_DUMP_LOCATION = /home/vcamp/.config/Code/exthost Crash Reports
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+GDK_BACKEND = x11
+# environment
+LC_PAPER = el_GR.UTF-8
+# environment
+LC_IDENTIFICATION = el_GR.UTF-8
+# environment
+QT_ACCESSIBILITY = 1
+# makefile (from 'Makefile', line 22)
+BENCHMARKSOBJ = obj/Benchmarks/Benchmarks.o obj/Benchmarks/Benchmark_memchr.o obj/Benchmarks/Benchmark_memset.o obj/Benchmarks/Benchmark_memcpy.o obj/memman/memset.o obj/memman/memchr.o obj/memman/memcpy.o obj/Maths/Comparison_vectorized.o obj/Benchmarks/Benchmark_Comparisons.o obj/Maths/Dot_product_vectorized.o obj/Benchmarks/Benchmark_Dotproduct.o  obj/Benchmarks/Benchmark_minmax.o obj/Maths/min_max_vectorized.o obj/Benchmarks/Benchmark_Add_matrixes.o obj/Linear_Algebra/Add_matrixes_vectorized.o obj/Benchmarks/Benchmark_Transpose_matrixes.o obj/Linear_Algebra/Transpose_matrixes_vectorized.o  obj/Benchmarks/Benchmark_Mul_matrixes.o obj/Linear_Algebra/Mul_matrixes_vectorized.o   obj/Prints/PrintVecs.o
+# default
+MAKEFILES := 
+# environment
+SNAP_COOKIE = 6C3add8V5lqdKfJgjvJpOLCDM7rHkWHMVpoBEz18ZWbQeY_UOwf0
+# environment
+LC_NUMERIC = el_GR.UTF-8
+# automatic
+<F = $(notdir $<)
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+LC_MEASUREMENT = el_GR.UTF-8
+# environment
+SNAP_NAME = code
+# environment
+LC_ALL = C
+# environment
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# automatic
+^F = $(notdir $^)
+ 
+# default
+SUFFIXES := 
+# makefile (from 'Makefile', line 13)
+MATH1EXE = bin/test_Comparison_vectorized.exe
+# environment
+SNAP_REEXEC = 
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+WINDOWPATH = 2
+# makefile (from 'Makefile', line 19)
+LAMATH3 = bin/test_Mul_matrixes.exe 
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# environment
+GJS_DEBUG_OUTPUT = stderr
+# default
+.RECIPEPREFIX := 
+# environment
+LC_ADDRESS = el_GR.UTF-8
+# environment
+LANG = C
+# environment
+VSCODE_PID = 4433
+# variable set hash-table stats:
+# Load=145/1024=14%, Rehash=0, Collisions=28/194=14%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 66306, inode 7340094): 8 files, no impossibilities.
+# src/memman (device 66306, inode 7340208): No files, no impossibilities so far.
+# src/Linear_Algebra (device 66306, inode 7340185): No files, no impossibilities so far.
+# src/Maths (device 66306, inode 7340192): No files, no impossibilities so far.
+# src/Prints (device 66306, inode 7340199): No files, no impossibilities so far.
+# src/Benchmarks (device 66306, inode 7340174): No files, no impossibilities so far.
+
+# 8 files, no impossibilities in 6 directories.
+
+# Implicit Rules
+
+print-%:
+#  recipe to execute (from 'Makefile', line 25):
+	 @echo $* = $($*)
+
+obj/memman/%.o: src/memman/%.cpp
+#  recipe to execute (from 'Makefile', line 69):
+	$(CC) $(CXXFLAGS) -c $< -o $@
+
+obj/Benchmarks/%.o: src/Benchmarks/%.cpp
+#  recipe to execute (from 'Makefile', line 72):
+	$(CC) $(CXXFLAGS) -c $< -o $@
+
+obj/Maths/%.o: src/Maths/%.cpp
+#  recipe to execute (from 'Makefile', line 75):
+	$(CC)  $(CXXFLAGS) -c $< -o $@
+
+obj/Prints/%.o: src/Prints/%.cpp
+#  recipe to execute (from 'Makefile', line 78):
+	$(CC)  $(CXXFLAGS) -c $< -o $@
+
+obj/Linear_Algebra/%.o: src/Linear_Algebra/%.cpp
+#  recipe to execute (from 'Makefile', line 81):
+	$(CC)  $(CXXFLAGS) -c $< -o $@
+
+# 6 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+# Not a target:
+obj/Benchmarks/Benchmark_Add_matrixes.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+obj/Maths/test_Comparison_vectorized.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+obj/Prints/PrintVecs.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all: makedir bin/test_memset.exe bin/test_memchr.exe bin/test_memcpy.exe bin/test_Comparison_vectorized.exe bin/test_Dot_product_vectorized.exe bin/test_min_max_vectorized.exe bin/test_Add_matrixes.exe bin/test_Transpose_matrixes.exe bin/test_Mul_matrixes.exe bin/Benchmarks.exe
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
+
+# Not a target:
+obj/Benchmarks/Benchmarks.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+obj/Maths/Dot_product_vectorized.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+obj/Linear_Algebra/test_Add_matrixes.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+bin/test_Add_matrixes.exe: obj/Linear_Algebra/test_Add_matrixes.o obj/Linear_Algebra/Add_matrixes_vectorized.o obj/Prints/PrintVecs.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 53):
+	$(CC) obj/Linear_Algebra/test_Add_matrixes.o obj/Linear_Algebra/Add_matrixes_vectorized.o obj/Prints/PrintVecs.o $(LDFLAGS) -o $@ 
+
+bin/test_min_max_vectorized.exe: obj/Maths/test_min_max_vectorized.o obj/Maths/min_max_vectorized.o obj/Prints/PrintVecs.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 49):
+	$(CC) obj/Maths/test_min_max_vectorized.o obj/Maths/min_max_vectorized.o  obj/Prints/PrintVecs.o $(LDFLAGS) -o $@
+
+# Not a target:
+obj/Benchmarks/Benchmark_minmax.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2021-06-14 10:22:10.172942159
+#  File has been updated.
+#  Successfully updated.
+
+bin/test_Dot_product_vectorized.exe: obj/Maths/test_Dot_product_vectorized.o obj/Maths/Dot_product_vectorized.o obj/Prints/PrintVecs.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 46):
+	$(CC) obj/Maths/test_Dot_product_vectorized.o obj/Maths/Dot_product_vectorized.o obj/Prints/PrintVecs.o $(LDFLAGS) -o $@
+
+# Not a target:
+obj/Benchmarks/Benchmark_Dotproduct.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+obj/Benchmarks/Benchmark_Comparisons.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+obj/memman/test_memcpy.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+obj/memman/memcpy.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+obj/memman/test_memchr.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+bin/test_Comparison_vectorized.exe: obj/Maths/test_Comparison_vectorized.o obj/Maths/Comparison_vectorized.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 42):
+	$(CC) obj/Maths/test_Comparison_vectorized.o obj/Maths/Comparison_vectorized.o $(LDFLAGS) -o $@
+
+# Not a target:
+obj/memman/test_memset.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+obj/memman/memchr.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+obj/memman/memset.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+obj/Linear_Algebra/Mul_matrixes_vectorized.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+obj/Benchmarks/Benchmark_memcpy.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+obj/Benchmarks/Benchmark_Mul_matrixes.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+makedir:
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := makedir
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := 
+# automatic
+# | := 
+# automatic
+# < := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/11=9%
+#  recipe to execute (from 'Makefile', line 84):
+	mkdir -p obj/memman obj/Maths obj/Benchmarks obj/Prints obj/Linear_Algebra bin
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 88):
+	rm -rf obj bin
+
+# Not a target:
+obj/Benchmarks/Benchmark_memchr.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+obj/Maths/Comparison_vectorized.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+obj/Benchmarks/Benchmark_memset.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+obj/Benchmarks/Benchmark_Transpose_matrixes.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+obj/Maths/test_min_max_vectorized.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ 
+# Not a target:
+obj/Maths/min_max_vectorized.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+obj/Linear_Algebra/test_Mul_matrixes.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+bin/Benchmarks.exe: obj/Benchmarks/Benchmarks.o obj/Benchmarks/Benchmark_memchr.o obj/Benchmarks/Benchmark_memset.o obj/Benchmarks/Benchmark_memcpy.o obj/memman/memset.o obj/memman/memchr.o obj/memman/memcpy.o obj/Maths/Comparison_vectorized.o obj/Benchmarks/Benchmark_Comparisons.o obj/Maths/Dot_product_vectorized.o obj/Benchmarks/Benchmark_Dotproduct.o obj/Benchmarks/Benchmark_minmax.o obj/Maths/min_max_vectorized.o obj/Benchmarks/Benchmark_Add_matrixes.o obj/Linear_Algebra/Add_matrixes_vectorized.o obj/Benchmarks/Benchmark_Transpose_matrixes.o obj/Linear_Algebra/Transpose_matrixes_vectorized.o obj/Benchmarks/Benchmark_Mul_matrixes.o obj/Linear_Algebra/Mul_matrixes_vectorized.o obj/Prints/PrintVecs.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 65):
+	$(CC) $(BENCHMARKSOBJ) $(LDFLAGS) -o $@
+
+# Not a target:
+obj/Maths/test_Dot_product_vectorized.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+bin/test_memcpy.exe: obj/memman/test_memcpy.o obj/memman/memcpy.o obj/Prints/PrintVecs.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 39):
+	$(CC) obj/memman/test_memcpy.o obj/memman/memcpy.o obj/Prints/PrintVecs.o $(LDFLAGS) -o $@ 
+
+# Not a target:
+obj/Linear_Algebra/test_Transpose_matrixes.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+bin/test_Mul_matrixes.exe: obj/Linear_Algebra/test_Mul_matrixes.o obj/Linear_Algebra/Mul_matrixes_vectorized.o obj/Linear_Algebra/Transpose_matrixes_vectorized.o obj/Prints/PrintVecs.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 60):
+	$(CC)   obj/Linear_Algebra/test_Mul_matrixes.o  obj/Linear_Algebra/Mul_matrixes_vectorized.o  obj/Linear_Algebra/Transpose_matrixes_vectorized.o obj/Prints/PrintVecs.o $(LDFLAGS) -o $@ 
+
+# Not a target:
+obj/Linear_Algebra/Add_matrixes_vectorized.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+bin/test_memchr.exe: obj/memman/test_memchr.o obj/memman/memchr.o obj/memman/memset.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 36):
+	$(CC) obj/memman/test_memchr.o obj/memman/memchr.o obj/memman/memset.o $(LDFLAGS) -o $@
+
+bin/test_memset.exe: obj/memman/test_memset.o obj/memman/memset.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 33):
+	$(CC) obj/memman/test_memset.o obj/memman/memset.o $(LDFLAGS) -o $@
+
+bin/test_Transpose_matrixes.exe: obj/Linear_Algebra/test_Transpose_matrixes.o obj/Linear_Algebra/Transpose_matrixes_vectorized.o obj/Prints/PrintVecs.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 57):
+	$(CC) obj/Linear_Algebra/test_Transpose_matrixes.o obj/Linear_Algebra/Transpose_matrixes_vectorized.o obj/Prints/PrintVecs.o $(LDFLAGS) -o $@ 
+
+# Not a target:
+obj/Linear_Algebra/Transpose_matrixes_vectorized.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=45/1024=4%, Rehash=0, Collisions=1/125=1%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 70 / storage = 1642 B / avg = 23 B
+# current buf: size = 8162 B / used = 1642 B / count = 70 / avg = 23 B
+
+# strcache performance: lookups = 117 / hit rate = 40%
+# hash-table stats:
+# Load=70/8192=1%, Rehash=0, Collisions=4/117=3%
+# Finished Make data base on Mon Jun 14 10:29:01 2021
+
+ 

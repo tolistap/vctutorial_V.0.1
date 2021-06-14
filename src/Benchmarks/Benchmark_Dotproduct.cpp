@@ -1,13 +1,13 @@
 #include<iostream>
 #include<chrono>
-#include <time.h>
-#include "MathsFNS.h"
+#include<time.h>
+#include"MathsFNS.hpp"
 
 
 /*In the code bellow benchmarks for scalar and vectorized functions which implement the procedure of dot product calculation are made.*/
 
 void Benchmark_Dotproduct(const int n){
-    std::cout<<std::endl << "Dotproduct Vectorization: "<<std::endl;
+    std::cout<<std::endl <<"\x1B[35m Dotproduct Vectorization: \x1B[0m"<<std::endl;
     
     /* initialize random seed: */
     srand (time(NULL));
@@ -19,7 +19,7 @@ void Benchmark_Dotproduct(const int n){
 
      /*Dot Product int Scalar Benchmark*/
     auto start = std::chrono::steady_clock::now();
-    std::cout<<"output: " <<scalar_dot_int_product(test,n);
+    std::cout<<"output: " <<scalar_dot_product<int>(test,n);
     auto end = std::chrono::steady_clock::now();
     std::chrono::duration<double> elapsed_seconds = end-start;
     std::cout << " || Scalar int Dot product elapsed time: " << elapsed_seconds.count() << "s\n";
@@ -56,7 +56,7 @@ void Benchmark_Dotproduct(const int n){
 
     /*Dot Product float Scalar Benchmark*/
     start = std::chrono::steady_clock::now();
-    scalar_dot_f_product(vec,n);
+    scalar_dot_product<float>(vec,n);
     end = std::chrono::steady_clock::now();
     elapsed_seconds = end-start;
     std::cout << "Scalar float Dot product elapsed time: " << elapsed_seconds.count() << "s\n";
@@ -67,5 +67,4 @@ void Benchmark_Dotproduct(const int n){
     end = std::chrono::steady_clock::now();
     elapsed_seconds = end-start;
     std::cout << "Vectrorized Dot product float with _mm_dp_ps elapsed time: " << elapsed_seconds.count() << "s\n";
-
  }   

@@ -1,12 +1,13 @@
 #include<iostream>
 #include<chrono>
 #include<vector>
-#include"LinearAlgebraFNS.h"
+#include"LinearAlgebraFNS.hpp"
 
 
 /*In the code bellow benchmarks for scalar and vectorized functions which implement the procedure of matrix meultiplication are made.*/
 
 void Benchmark_mul_matrixesnx4(){
+    std::cout <<"\x1B[35m Matrix Multiplication Vectorization: \x1B[0m"<<std::endl;
     /*4X4 benchmarks*/
     std::vector<std::vector<int>> M1 {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}, {13, 14, 15, 16}};
     std::vector<std::vector<int>> M2 {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}, {13, 14, 15, 16}};
@@ -15,7 +16,7 @@ void Benchmark_mul_matrixesnx4(){
     
     /*Scala 4x4 matrix multiplication Benchmark*/
     auto start = std::chrono::steady_clock::now();
-    scalar_mul_matint(M3,M1,M2,4,4,4);
+    scalar_mul_matrixes(M3,M1,M2);
     auto end = std::chrono::steady_clock::now();
     std::chrono::duration<double> elapsed_seconds = end-start;
     std::cout << "Scalar Mul matrixes4x4 Function elapsed time: " << elapsed_seconds.count() << "s\n";
@@ -36,7 +37,7 @@ void Benchmark_mul_matrixesnx4(){
 
     /*Scala 8x4 matrix multiplication Benchmark*/
     start = std::chrono::steady_clock::now();
-    scalar_mul_matint(M33,M11,M22,8,4,4);
+    scalar_mul_matrixes(M33,M11,M22);
     end = std::chrono::steady_clock::now();
     elapsed_seconds = end-start;
     std::cout << "Scalar Mul matrixes8x4 Function elapsed time: " << elapsed_seconds.count() << "s\n";

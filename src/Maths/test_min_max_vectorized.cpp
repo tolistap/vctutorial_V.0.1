@@ -1,6 +1,5 @@
 #include<iostream>
-#include"MathsFNS.h"
-#include"PrintFNS.h"
+#include"MathsFNS.hpp"
 #include<vector>
 
 int main(){

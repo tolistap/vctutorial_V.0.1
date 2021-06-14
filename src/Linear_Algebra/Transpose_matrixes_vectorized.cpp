@@ -1,34 +1,11 @@
 #include<iostream>
 #include<vector>
 #include<immintrin.h>
-#include"PrintFNS.h"
-
 
 /*In this code file a function for matrix transposure vectorized with 1 method.
   128 version with a 128bits vectors for 4x4 matrix.
 */
 
-/*This method adds two integers matrixes based in cpp vectors objects*/
-std::vector<std::vector<int>> scalar_transposeint(std::vector<std::vector<int>> m1){
-    std::vector<std::vector<int>> tr((int)m1[0].size(), std::vector<int> ((int)m1.size(), 0));
-      for(int i = 0; i < (int)m1.size(); i++){
-        for(int j = 0; j < (int)m1[0].size(); j++){
-           tr[j][i] = m1[i][j];
-        } 
-    }
-    return tr;
-}
-
-/*This method adds two float matrixes based in cpp vectors objects*/
-std::vector<std::vector<float>> scalar_transpose(std::vector<std::vector<float>> m1){
-    std::vector<std::vector<float>> tr((int)m1[0].size(), std::vector<float> ((int)m1.size(), 0));
-      for(int i = 0; i < (int)m1.size(); i++){
-        for(int j = 0; j < (int)m1[0].size(); j++){
-           tr[j][i] = m1[i][j];
-        } 
-    }
-    return tr;
-}
 /*This function is under construction.*/
 std::vector<std::vector<float>> vectorized128_transpose_mat4x4(std::vector<std::vector<float>> m1){
   std::vector<std::vector<float>> tr(4, std::vector<float> (4, 0));
@@ -130,11 +107,3 @@ std::vector<std::vector<int>> vectorized128i_transpose_mat8x8(std::vector<std::v
       _mm256_storeu_si256((__m256i*)&tr[5][0],r5); 
     return tr;
 }
-
-
-
-
-
-
-
-
