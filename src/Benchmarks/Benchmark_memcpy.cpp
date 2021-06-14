@@ -10,9 +10,8 @@ namespace plt = matplotlibcpp;
 /*In the code bellow benchmarks for scalar and vectorized functions which implement the procedure of memory copy are made.*/
 
 void Benchmark_memcpy(){
+    std::cout <<"\x1B[35m memcpy Function Vectorization: \x1B[0m"<<std::endl;
     std::vector<double> x;
-
-    std::cout<<std::endl << "memcpy Function Vectorization: "<<std::endl<<std::endl;
 
     /* initialize random seed: */
     srand (time(NULL));
