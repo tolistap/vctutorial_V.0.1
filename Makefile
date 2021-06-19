@@ -13,6 +13,7 @@ MEM3EXE = bin/test_memcpy.exe
 MATH1EXE = bin/test_Comparison_vectorized.exe
 MATH2EXE = bin/test_Dot_product_vectorized.exe
 MATH3EXE = bin/test_min_max_vectorized.exe
+MATH4EXE = bin/test_lshift.exe
 
 LAMATH1 = bin/test_Add_matrixes.exe
 LAMATH2 = bin/test_Transpose_matrixes.exe
@@ -25,7 +26,7 @@ BENCHMARKSOBJ = obj/Benchmarks/Benchmarks.o obj/Benchmarks/Benchmark_memchr.o ob
 print-%: ; @echo $* = $($*)
 
 #move all .o files in objectfiles directory
-all: makedir  $(MEM1EXE) $(MEM2EXE) $(MEM3EXE) $(MATH1EXE) $(MATH2EXE) $(MATH3EXE) $(LAMATH1)  $(LAMATH2) $(LAMATH3) $(BENCHMARKEXE)
+all: makedir  $(MEM1EXE) $(MEM2EXE) $(MEM3EXE) $(MATH1EXE) $(MATH2EXE) $(MATH3EXE) $(MATH4EXE) $(LAMATH1)  $(LAMATH2) $(LAMATH3) $(BENCHMARKEXE)
 
 
 # Start memman executable creation
@@ -48,6 +49,8 @@ $(MATH2EXE): obj/Maths/test_Dot_product_vectorized.o obj/Maths/Dot_product_vecto
 $(MATH3EXE): obj/Maths/test_min_max_vectorized.o obj/Maths/min_max_vectorized.o obj/Prints/PrintVecs.o
 	$(CC) obj/Maths/test_min_max_vectorized.o obj/Maths/min_max_vectorized.o  obj/Prints/PrintVecs.o $(LDFLAGS) -o $@
 
+$(MATH4EXE): obj/Maths/test_lshift.o obj/Maths/lshift.o obj/Prints/PrintVecs.o
+	$(CC) obj/Maths/test_lshift.o obj/Maths/lshift.o obj/Prints/PrintVecs.o $(LDFLAGS) -o $@
 
 $(LAMATH1): obj/Linear_Algebra/test_Add_matrixes.o obj/Linear_Algebra/Add_matrixes_vectorized.o obj/Prints/PrintVecs.o
 	$(CC) obj/Linear_Algebra/test_Add_matrixes.o obj/Linear_Algebra/Add_matrixes_vectorized.o obj/Prints/PrintVecs.o $(LDFLAGS) -o $@ 
