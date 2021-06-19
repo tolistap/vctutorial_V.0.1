@@ -39,3 +39,5 @@ int32_t dot_product_vectorized128w2(const int* vec, const int n);
 float dot_product_vectorized128w3(const float* vec, const int n);
 int32_t dot_product_vectorized256iw1(const int * vec, const int n);
 int32_t dot_product_vectorized256iw2(const int * vec, const int n);
+
+uint8_t Lshift(void * ptr, unsigned int n);

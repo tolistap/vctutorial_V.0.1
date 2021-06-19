@@ -1,4 +1,4 @@
-make --dry-run --always-make --keep-going --print-directory
+make --dry-run --keep-going --print-directory
 make: Entering directory '/home/vcamp/Vectrocamp/vctutorial_V.0.1'
 mkdir -p obj/memman obj/Maths obj/Benchmarks obj/Prints obj/Linear_Algebra bin
 g++ -std=c++11 -Wall -I src/include -DWITHOUT_NUMPY -I/usr/include/python3.8 -mavx -mavx2 -O2 -g3  -c src/memman/test_memset.cpp -o obj/memman/test_memset.o
@@ -20,6 +20,9 @@ g++ obj/Maths/test_Dot_product_vectorized.o obj/Maths/Dot_product_vectorized.o o
 g++  -std=c++11 -Wall -I src/include -DWITHOUT_NUMPY -I/usr/include/python3.8 -mavx -mavx2 -O2 -g3  -c src/Maths/test_min_max_vectorized.cpp -o obj/Maths/test_min_max_vectorized.o
 g++  -std=c++11 -Wall -I src/include -DWITHOUT_NUMPY -I/usr/include/python3.8 -mavx -mavx2 -O2 -g3  -c src/Maths/min_max_vectorized.cpp -o obj/Maths/min_max_vectorized.o
 g++ obj/Maths/test_min_max_vectorized.o obj/Maths/min_max_vectorized.o  obj/Prints/PrintVecs.o -lgtest -lpthread -lpython3.8 -o bin/test_min_max_vectorized.exe
+g++  -std=c++11 -Wall -I src/include -DWITHOUT_NUMPY -I/usr/include/python3.8 -mavx -mavx2 -O2 -g3  -c src/Maths/test_lshift.cpp -o obj/Maths/test_lshift.o
+g++  -std=c++11 -Wall -I src/include -DWITHOUT_NUMPY -I/usr/include/python3.8 -mavx -mavx2 -O2 -g3  -c src/Maths/lshift.cpp -o obj/Maths/lshift.o
+g++ obj/Maths/test_lshift.o obj/Maths/lshift.o obj/Prints/PrintVecs.o -lgtest -lpthread -lpython3.8 -o bin/test_lshift.exe
 g++  -std=c++11 -Wall -I src/include -DWITHOUT_NUMPY -I/usr/include/python3.8 -mavx -mavx2 -O2 -g3  -c src/Linear_Algebra/test_Add_matrixes.cpp -o obj/Linear_Algebra/test_Add_matrixes.o
 g++  -std=c++11 -Wall -I src/include -DWITHOUT_NUMPY -I/usr/include/python3.8 -mavx -mavx2 -O2 -g3  -c src/Linear_Algebra/Add_matrixes_vectorized.cpp -o obj/Linear_Algebra/Add_matrixes_vectorized.o
 g++ obj/Linear_Algebra/test_Add_matrixes.o obj/Linear_Algebra/Add_matrixes_vectorized.o obj/Prints/PrintVecs.o -lgtest -lpthread -lpython3.8 -o bin/test_Add_matrixes.exe 
