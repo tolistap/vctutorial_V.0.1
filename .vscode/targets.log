@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Jun 14 10:29:01 2021
+# Make data base, printed on Sat Jun 19 18:03:36 2021
 
 # Variables
 
@@ -45,13 +45,13 @@ CURDIR := /home/vcamp/Vectrocamp/vctutorial_V.0.1
 # makefile
 SHELL = /bin/sh
 # environment
-SNAP_DATA = /var/snap/code/66
+SNAP_DATA = /var/snap/code/67
 # makefile (from 'Makefile', line 14)
 MATH2EXE = bin/test_Dot_product_vectorized.exe
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
-JOURNAL_STREAM = 8:39383
+JOURNAL_STREAM = 8:43009
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # environment
@@ -79,9 +79,9 @@ DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-_ = /snap/code/66/usr/share/code/code
+_ = /snap/code/67/usr/share/code/code
 # environment
-MANAGERPID = 821
+MANAGERPID = 860
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
@@ -89,7 +89,7 @@ LC_NAME = el_GR.UTF-8
 # environment
 VSCODE_CWD = /home/vcamp
 # environment
-GSETTINGS_SCHEMA_DIR = /snap/code/66/usr/share/glib-2.0/schemas
+GSETTINGS_SCHEMA_DIR = /snap/code/67/usr/share/glib-2.0/schemas
 # makefile (from 'Makefile', line 7)
 BENCHMARKEXE = bin/Benchmarks.exe
 # default
@@ -99,15 +99,15 @@ PATH = /home/vcamp/.local/bin:/home/vcamp/.local/bin:/usr/local/sbin:/usr/local/
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/Vectorcamp:@/tmp/.ICE-unix/1126,unix/Vectorcamp:/tmp/.ICE-unix/1126
+SESSION_MANAGER = local/Vectorcamp:@/tmp/.ICE-unix/1167,unix/Vectorcamp:/tmp/.ICE-unix/1167
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
 GDK_PIXBUF_MODULE_FILE = /home/vcamp/snap/code/common/.cache/gdk-pixbuf-loaders.cache
 # environment
-SNAP = /snap/code/66
+SNAP = /snap/code/67
 # environment
-SNAP_VERSION = b4c1bd0a
+SNAP_VERSION = 507ce72a
 # environment
 XDG_MENU_PREFIX = gnome-
 # makefile (from 'Makefile', line 10)
@@ -119,11 +119,11 @@ DISABLE_WAYLAND = 1
 # environment
 VSCODE_CRASH_REPORTER_START_OPTIONS = {"companyName":"Microsoft","productName":"VSCode","submitURL":"appcenter://code?aid=fba07a4d-84bd-4fc8-a125-9640fc8ce171&uid=f5e185f0-4d03-446f-80d1-7b0bfc992946&iid=f5e185f0-4d03-446f-80d1-7b0bfc992946&sid=f5e185f0-4d03-446f-80d1-7b0bfc992946","uploadToServer":true}
 # environment
-INVOCATION_ID = 27c7c09507f347839700800063b26b2c
+INVOCATION_ID = fd5a53b125104ed49764412f9326ef9c
 # makefile (from 'Makefile', line 5)
 LDFLAGS = -lgtest -lpthread -lpython3.8
 # environment
-GDK_PIXBUF_MODULEDIR = /snap/code/66/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+GDK_PIXBUF_MODULEDIR = /snap/code/67/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -133,7 +133,7 @@ XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 4389
+GIO_LAUNCHED_DESKTOP_FILE_PID = 22982
 # automatic
 %F = $(notdir $%)
 # environment
@@ -151,7 +151,7 @@ PWD = /home/vcamp/Vectrocamp/vctutorial_V.0.1
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 1082
+SSH_AGENT_PID = 1124
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -197,7 +197,7 @@ MAKECMDGOALS := all
 # environment
 QT_IM_MODULE = ibus
 # environment
-SNAP_USER_DATA = /home/vcamp/snap/code/66
+SNAP_USER_DATA = /home/vcamp/snap/code/67
 # environment
 SHLVL = 0
 # makefile (from 'Makefile', line 3)
@@ -205,13 +205,13 @@ CC = g++
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-1b339ecc-f332-42f8-b548-4ed177c870d3.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-5142471e-61f6-4fb3-8ece-78e24083bb53.sock
 # default
 MAKE_VERSION := 4.2.1
 # environment
 USER = vcamp
 # environment
-SNAP_REVISION = 66
+SNAP_REVISION = 67
 # environment
 LC_MONETARY = el_GR.UTF-8
 # makefile
@@ -227,13 +227,13 @@ MEM3EXE = bin/test_memcpy.exe
 # default
 MAKE_COMMAND := make
 # environment
-VSCODE_NODE_CACHED_DATA_DIR = /home/vcamp/.config/Code/CachedData/b4c1bd0a9b03c749ea011b06c6d2676c8091a70c
+VSCODE_NODE_CACHED_DATA_DIR = /home/vcamp/.config/Code/CachedData/507ce72a4466fbb27b715c3722558bb15afa9f48
 # default
 .VARIABLES := 
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /run/user/1000/vscode-69967058-1.57.0-main.sock
+VSCODE_IPC_HOOK = /run/user/1000/vscode-69967058-1.57.1-main.sock
 # environment
 BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
 # makefile
@@ -276,7 +276,6 @@ LC_ALL = C
 GJS_DEBUG_TOPICS = JS ERROR;JS LOG
 # automatic
 ^F = $(notdir $^)
- 
 # default
 SUFFIXES := 
 # makefile (from 'Makefile', line 13)
@@ -291,6 +290,7 @@ WINDOWPATH = 2
 LAMATH3 = bin/test_Mul_matrixes.exe 
 # default
 .INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+ 
 # environment
 GJS_DEBUG_OUTPUT = stderr
 # default
@@ -300,7 +300,7 @@ LC_ADDRESS = el_GR.UTF-8
 # environment
 LANG = C
 # environment
-VSCODE_PID = 4433
+VSCODE_PID = 23029
 # variable set hash-table stats:
 # Load=145/1024=14%, Rehash=0, Collisions=28/194=14%
 
@@ -577,7 +577,6 @@ obj/Maths/test_min_max_vectorized.o:
 #  Modification time never checked.
 #  File has not been updated.
 
- 
 # Not a target:
 obj/Maths/min_max_vectorized.o:
 #  Implicit rule search has not been done.
@@ -589,6 +588,7 @@ obj/Linear_Algebra/test_Mul_matrixes.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
+ 
 
 bin/Benchmarks.exe: obj/Benchmarks/Benchmarks.o obj/Benchmarks/Benchmark_memchr.o obj/Benchmarks/Benchmark_memset.o obj/Benchmarks/Benchmark_memcpy.o obj/memman/memset.o obj/memman/memchr.o obj/memman/memcpy.o obj/Maths/Comparison_vectorized.o obj/Benchmarks/Benchmark_Comparisons.o obj/Maths/Dot_product_vectorized.o obj/Benchmarks/Benchmark_Dotproduct.o obj/Benchmarks/Benchmark_minmax.o obj/Maths/min_max_vectorized.o obj/Benchmarks/Benchmark_Add_matrixes.o obj/Linear_Algebra/Add_matrixes_vectorized.o obj/Benchmarks/Benchmark_Transpose_matrixes.o obj/Linear_Algebra/Transpose_matrixes_vectorized.o obj/Benchmarks/Benchmark_Mul_matrixes.o obj/Linear_Algebra/Mul_matrixes_vectorized.o obj/Prints/PrintVecs.o
 #  Implicit rule search has not been done.
@@ -670,6 +670,6 @@ obj/Linear_Algebra/Transpose_matrixes_vectorized.o:
 # strcache performance: lookups = 117 / hit rate = 40%
 # hash-table stats:
 # Load=70/8192=1%, Rehash=0, Collisions=4/117=3%
-# Finished Make data base on Mon Jun 14 10:29:01 2021
+# Finished Make data base on Sat Jun 19 18:03:36 2021
 
  
